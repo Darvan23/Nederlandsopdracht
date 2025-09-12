@@ -1,6 +1,6 @@
 </main>
-<footer class="site-footer">
-  <div class="container">
+<footer class="footer">
+  <div class="wrap">
     <small><?= htmlspecialchars($t['footer_rights']) ?></small>
   </div>
 </footer>
