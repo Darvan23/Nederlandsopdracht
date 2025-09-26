@@ -29,4 +29,41 @@ $t = [
   'contact_stub'  => 'Demo form: replace action with your handler.',
   'footer_rights' => '© ' . date('Y') . ' Best‑Inn Hotels. All rights reserved.',
   'not_found' => 'Page not found.',
+  'nav_rooms' => 'Rooms',
+
+  // Rooms page
+  'rooms_title'        => 'Choose your room',
+  'rooms_intro'        => 'Quiet, clean, and practical. All rooms include free Wi-Fi and late checkout until 13:00.',
+  'room_standard_desc' => 'Everything you need for a good night: double bed or twin, desk, and a fresh bathroom.',
+  'room_comfort_desc'  => 'A bit more space, a comfy chair, and a larger desk. Ideal for a short break or work trip.',
+  'room_deluxe_desc'   => 'Our most spacious option with sitting area and extra comfort for slow mornings.',
+  'late_checkout'      => 'Late checkout (13:00)',
+  'breakfast_optional' => 'Breakfast optional',
+  'view_deal'          => 'View deal',
+
+  // Extra rooms
+  'room_family'         => 'Family Room',
+  'room_family_desc'    => 'Spacious room with double bed and two twins or a sofa bed. Perfect for families.',
+  'room_twin'           => 'Twin Room',
+  'room_twin_desc'      => 'Two separate single beds, ideal for friends or colleagues.',
+  'room_single'         => 'Single Room',
+  'room_single_desc'    => 'Compact and efficient—great value for a short solo stay.',
+  'room_superior'       => 'Superior Room',
+  'room_superior_desc'  => 'A refined upgrade with extra space, premium bedding, and a better view.',
+  'room_junior_suite'   => 'Junior Suite',
+  'room_junior_suite_desc'=> 'Suite-style layout with sitting area—extra comfort for longer stays.',
+  'room_accessible'     => 'Accessible Room',
+  'room_accessible_desc'=> 'Step-free access, wider doors, and accessible bathroom features.',
+
+  // Alt text
+  'alt_room_standard'    => 'Standard room at Best-Inn',
+  'alt_room_comfort'     => 'Comfort room at Best-Inn',
+  'alt_room_deluxe'      => 'Deluxe room at Best-Inn',
+  'alt_room_family'      => 'Family room at Best-Inn',
+  'alt_room_twin'        => 'Twin room at Best-Inn',
+  'alt_room_single'      => 'Single room at Best-Inn',
+  'alt_room_superior'    => 'Superior room at Best-Inn',
+  'alt_room_junior_suite'=> 'Junior Suite at Best-Inn',
+  'alt_room_accessible'  => 'Accessible room at Best-Inn',
+
 ];

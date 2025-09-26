@@ -29,4 +29,41 @@ $t = [
   'contact_stub'  => 'Demoformulier: vervang de action met jouw handler.',
   'footer_rights' => '© ' . date('Y') . ' Best‑Inn Hotels. Alle rechten voorbehouden.',
   'not_found' => 'Pagina niet gevonden.',
+  'nav_rooms' => 'Kamers',
+
+  // Kamers pagina
+  'rooms_title'        => 'Kies je kamer',
+  'rooms_intro'        => 'Rustig, schoon en praktisch. Alle kamers hebben gratis Wi-Fi en late check-out tot 13:00.',
+  'room_standard_desc' => 'Alles wat je nodig hebt voor een goede nacht: tweepersoonsbed of twin, bureau en een frisse badkamer.',
+  'room_comfort_desc'  => 'Net wat ruimer, met een fijne stoel en groter bureau. Ideaal voor een korte break of werktrip.',
+  'room_deluxe_desc'   => 'Onze ruimste optie met zitgedeelte en extra comfort voor langzame ochtenden.',
+  'late_checkout'      => 'Late check-out (13:00)',
+  'breakfast_optional' => 'Ontbijt optioneel',
+  'view_deal'          => 'Bekijk deal',
+
+  // Extra kamers
+  'room_family'         => 'Familiekamer',
+  'room_family_desc'    => 'Ruime kamer met tweepersoonsbed en twee singles of slaapbank. Ideaal voor families.',
+  'room_twin'           => 'Tweepersoons Twin',
+  'room_twin_desc'      => 'Twee aparte eenpersoonsbedden—handig voor vrienden of collega’s.',
+  'room_single'         => 'Eenpersoonskamer',
+  'room_single_desc'    => 'Compact en efficiënt—goede prijs voor een kort soloverblijf.',
+  'room_superior'       => 'Superior Kamer',
+  'room_superior_desc'  => 'Een verfijnde upgrade met extra ruimte, premium beddengoed en beter uitzicht.',
+  'room_junior_suite'   => 'Junior Suite',
+  'room_junior_suite_desc'=> 'Suite-indeling met zitgedeelte—extra comfort voor langere verblijven.',
+  'room_accessible'     => 'Toegankelijke Kamer',
+  'room_accessible_desc'=> 'Drempelvrij, bredere deuren en aangepaste badkamerfeatures.',
+
+  // Alt-teksten
+  'alt_room_standard'    => 'Standaardkamer bij Best-Inn',
+  'alt_room_comfort'     => 'Comfortkamer bij Best-Inn',
+  'alt_room_deluxe'      => 'Deluxe kamer bij Best-Inn',
+  'alt_room_family'      => 'Familiekamer bij Best-Inn',
+  'alt_room_twin'        => 'Twin kamer bij Best-Inn',
+  'alt_room_single'      => 'Eenpersoonskamer bij Best-Inn',
+  'alt_room_superior'    => 'Superior kamer bij Best-Inn',
+  'alt_room_junior_suite'=> 'Junior Suite bij Best-Inn',
+  'alt_room_accessible'  => 'Toegankelijke kamer bij Best-Inn',
+
 ];

@@ -1,11 +1,12 @@
 <header class="header">
   <div class="wrap nav">
-    <a class="brand" href="?page=home">Best‑Inn</a>
+    <a class="brand" href="?page=home">Best-Inn</a>
     <input id="nav-toggle" type="checkbox" aria-label="open menu">
     <label for="nav-toggle" class="burger" aria-hidden="true"></label>
     <nav class="menu">
       <a href="?page=home"><?= htmlspecialchars($t['nav_home']) ?></a>
       <a href="?page=offer"><?= htmlspecialchars($t['nav_offer']) ?></a>
+      <a href="?page=rooms"><?= htmlspecialchars($t['nav_rooms']) ?></a> <!-- NEW -->
       <a href="?page=contact"><?= htmlspecialchars($t['nav_contact']) ?></a>
       <a class="lang" href="?page=<?= urlencode($page) ?>&lang=<?= $lang==='nl'?'en':'nl' ?>"><?= htmlspecialchars($t['switch_to']) ?></a>
     </nav>

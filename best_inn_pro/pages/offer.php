@@ -12,7 +12,7 @@ $perNight = $lang==='nl' ? 'per nacht' : 'per night';
 
   <div class="price-cards">
     <?php foreach ($prices as $p): ?>
-    <article class="price-card">
+    <article class="price-card" id="<?= htmlspecialchars($p['key']) ?>"> <!-- ← added id -->
       <img src="assets/images/<?= htmlspecialchars($p['key']) ?>-room.jpg" alt="<?= htmlspecialchars($p['label']) ?> Room" class="room-image">
       <h3><?= htmlspecialchars($p['label']) ?></h3>
       <div class="price-tag">
