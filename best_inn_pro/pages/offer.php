@@ -1,8 +1,8 @@
 <?php
 $prices = [
-  ['key'=>'standard','label'=>$t['room_standard'],'price'=>120],
-  ['key'=>'comfort','label'=>$t['room_comfort'],'price'=>130],
-  ['key'=>'deluxe','label'=>$t['room_deluxe'],'price'=>160],
+  ['key'=>'standard','label'=>$t['room_standard'],'old_price'=>150,'price'=>139],
+  ['key'=>'comfort','label'=>$t['room_comfort'],'old_price'=>170,'price'=>149],
+  ['key'=>'deluxe','label'=>$t['room_deluxe'],'old_price'=>200,'price'=>179],
 ];
 $perNight = $lang==='nl' ? 'per nacht' : 'per night';
 ?>
@@ -16,10 +16,13 @@ $perNight = $lang==='nl' ? 'per nacht' : 'per night';
       <img src="assets/images/<?= htmlspecialchars($p['key']) ?>-room.jpg" alt="<?= htmlspecialchars($p['label']) ?> Room" class="room-image">
       <h3><?= htmlspecialchars($p['label']) ?></h3>
       <div class="price-tag">
-        <span class="euro">€</span><span class="amount"><?= (int)$p['price'] ?></span>
+        <span class="old-price"><del>€<?= (int)$p['old_price'] ?></del></span>
+        <span class="new-price">
+          <span class="euro">€</span><span class="amount"><?= (int)$p['price'] ?></span>
+        </span>
         <small><?= $perNight ?></small>
       </div>
-      <a class="btn primary" target="_blank" href="https://example.com/booking"><?= htmlspecialchars($t['book_now']) ?></a>
+      <a class="btn primary" href="/?page=booking&room=<?= urlencode($p['key']) ?>"><?= htmlspecialchars($t['book_now']) ?></a>
     </article>
     <?php endforeach; ?>
   </div>

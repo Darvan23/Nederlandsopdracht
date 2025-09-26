@@ -12,7 +12,7 @@ require __DIR__ . "/lang/{$lang}.php"; // exposes $t array
 
 // Router
 $page = $_GET['page'] ?? 'home';
-$allowed = ['home','offer','contact','rooms']; // ← added 'rooms'
+$allowed = ['home','offer','contact','rooms','booking'];
 if (!in_array($page, $allowed, true)) {
   $page = '404';
 }

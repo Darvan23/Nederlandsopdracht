@@ -1,11 +1,11 @@
 <section class="home">
   <!-- Hero Banner Image with Overlay -->
   <div class="hero-banner">
-    <img src="assets/images/hero-banner.jpg" alt="Best-Inn Hotels - Comfortable and Modern Accommodations" class="hero-image">
+    <img src="assets/images/hero-banner.jpg" alt="<?= htmlspecialchars($t['site_title']) ?> - Comfortable and Modern Accommodations" class="hero-image">
     <div class="hero-overlay">
-      <h1>Welcome to Best-Inn Hotels</h1>
-      <p>Experience luxury and comfort in nature and city locations</p>
-      <a href="?page=offer" class="btn primary">View Our Offers</a>
+      <h1><?= htmlspecialchars($t['hero_banner_title']) ?></h1>
+      <p><?= htmlspecialchars($t['hero_banner_sub']) ?></p>
+      <a href="?page=offer" class="btn primary"><?= htmlspecialchars($t['cta_view_offer']) ?></a>
     </div>
   </div>
 

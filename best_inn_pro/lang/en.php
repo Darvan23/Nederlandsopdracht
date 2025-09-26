@@ -65,5 +65,21 @@ $t = [
   'alt_room_superior'    => 'Superior room at Best-Inn',
   'alt_room_junior_suite'=> 'Junior Suite at Best-Inn',
   'alt_room_accessible'  => 'Accessible room at Best-Inn',
+  'name_label'           => 'Name',
+  'email_label'          => 'Email',
+  'message_label'        => 'Message',
+  'send_message'         => 'Send',
 
+  // Footer
+  'footer_about'         => 'About Best-Inn',
+  'footer_links'         => 'Quick Links',
+  'footer_contact'       => 'Contact Us',
+  'footer_social'        => 'Follow Us',
+  'footer_copyright'     => '© ' . date('Y') . ' Best-Inn Hotels. All rights reserved.',
+  'footer_privacy'       => 'Privacy Policy',
+  'footer_terms'         => 'Terms of Service',
+
+  // Home hero banner
+  'hero_banner_title'    => 'Welcome to Best-Inn Hotels',
+  'hero_banner_sub'      => 'Experience luxury and comfort in nature and city locations',
 ];

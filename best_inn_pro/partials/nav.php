@@ -1,6 +1,6 @@
 <header class="header">
   <div class="wrap nav">
-    <a class="brand" href="?page=home">Best-Inn</a>
+    <a class="brand" href="?page=home">Best-Inn Hotels</a>
     <input id="nav-toggle" type="checkbox" aria-label="open menu">
     <label for="nav-toggle" class="burger" aria-hidden="true"></label>
     <nav class="menu">

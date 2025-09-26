@@ -65,5 +65,21 @@ $t = [
   'alt_room_superior'    => 'Superior kamer bij Best-Inn',
   'alt_room_junior_suite'=> 'Junior Suite bij Best-Inn',
   'alt_room_accessible'  => 'Toegankelijke kamer bij Best-Inn',
+  'name_label'           => 'Naam',
+  'email_label'          => 'E-mail',
+  'message_label'        => 'Bericht',
+  'send_message'         => 'Versturen',
 
+  // Footer
+  'footer_about'         => 'Over Best-Inn',
+  'footer_links'         => 'Snelle Links',
+  'footer_contact'       => 'Contacteer Ons',
+  'footer_social'        => 'Volg Ons',
+  'footer_copyright'     => '© ' . date('Y') . ' Best-Inn Hotels. Alle rechten voorbehouden.',
+  'footer_privacy'       => 'Privacybeleid',
+  'footer_terms'         => 'Voorwaarden',
+
+  // Home hero banner
+  'hero_banner_title'    => 'Welkom bij Best-Inn Hotels',
+  'hero_banner_sub'      => 'Ervaar luxe en comfort in natuur- en stadslocaties',
 ];

@@ -4,18 +4,18 @@
 // Other rooms go to your external booking URL (change to your real link).
 
 $offerKeys = ['standard','comfort','deluxe'];           // those exist in offer.php
-$extBooking = 'https://example.com/booking';            // ← replace with your real booking link
+$extBooking = '?page=booking';            // booking page
 
 $rooms = [
   ['key'=>'standard',     'name'=>$t['room_standard'],     'desc'=>$t['room_standard_desc'],     'img'=>"assets/images/standard-room.jpg",     'alt'=>$t['alt_room_standard']],
   ['key'=>'comfort',      'name'=>$t['room_comfort'],      'desc'=>$t['room_comfort_desc'],      'img'=>"assets/images/comfort-room.jpg",      'alt'=>$t['alt_room_comfort']],
   ['key'=>'deluxe',       'name'=>$t['room_deluxe'],       'desc'=>$t['room_deluxe_desc'],       'img'=>"assets/images/deluxe-room.jpg",       'alt'=>$t['alt_room_deluxe']],
-  ['key'=>'family',       'name'=>$t['room_family'],       'desc'=>$t['room_family_desc'],       'img'=>"assets/images/rooms/family.jpg",       'alt'=>$t['alt_room_family']],
-  ['key'=>'twin',         'name'=>$t['room_twin'],         'desc'=>$t['room_twin_desc'],         'img'=>"assets/images/rooms/twin.jpg",         'alt'=>$t['alt_room_twin']],
-  ['key'=>'single',       'name'=>$t['room_single'],       'desc'=>$t['room_single_desc'],       'img'=>"assets/images/rooms/single.jpg",       'alt'=>$t['alt_room_single']],
-  ['key'=>'superior',     'name'=>$t['room_superior'],     'desc'=>$t['room_superior_desc'],     'img'=>"assets/images/rooms/superior.jpg",     'alt'=>$t['alt_room_superior']],
-  ['key'=>'junior_suite', 'name'=>$t['room_junior_suite'], 'desc'=>$t['room_junior_suite_desc'], 'img'=>"assets/images/rooms/junior_suite.jpg", 'alt'=>$t['alt_room_junior_suite']],
-  ['key'=>'accessible',   'name'=>$t['room_accessible'],   'desc'=>$t['room_accessible_desc'],   'img'=>"assets/images/rooms/accessible.jpg",   'alt'=>$t['alt_room_accessible']],
+  ['key'=>'family',       'name'=>$t['room_family'],       'desc'=>$t['room_family_desc'],       'img'=>"assets/images/family.jpg",       'alt'=>$t['alt_room_family']],
+  ['key'=>'twin',         'name'=>$t['room_twin'],         'desc'=>$t['room_twin_desc'],         'img'=>"assets/images/twin.jpg",         'alt'=>$t['alt_room_twin']],
+  ['key'=>'single',       'name'=>$t['room_single'],       'desc'=>$t['room_single_desc'],       'img'=>"assets/images/single.jpg",       'alt'=>$t['alt_room_single']],
+  ['key'=>'superior',     'name'=>$t['room_superior'],     'desc'=>$t['room_superior_desc'],     'img'=>"assets/images/superior.jpg",     'alt'=>$t['alt_room_superior']],
+  ['key'=>'junior_suite', 'name'=>$t['room_junior_suite'], 'desc'=>$t['room_junior_suite_desc'], 'img'=>"assets/images/junior_suite.jpg", 'alt'=>$t['alt_room_junior_suite']],
+  ['key'=>'accessible',   'name'=>$t['room_accessible'],   'desc'=>$t['room_accessible_desc'],   'img'=>"assets/images/accessible.jpg",   'alt'=>$t['alt_room_accessible']],
 ];
 ?>
 
@@ -51,7 +51,7 @@ $rooms = [
                   <?= htmlspecialchars($t['view_deal']) ?>
                 </a>
               <?php else: ?>
-                <a class="btn primary" target="_blank" href="<?= htmlspecialchars($extBooking) . '?room=' . urlencode($r['key']) ?>">
+                <a class="btn primary" href="/?page=booking&room=<?= urlencode($r['key']) ?>">
                   <?= htmlspecialchars($t['book_now']) ?>
                 </a>
               <?php endif; ?>
@@ -66,10 +66,10 @@ $rooms = [
 </section>
 
 <style>
-/* Rooms page – lightweight, matches your style */
+/* Rooms page – matches dark theme */
 .section { padding: 3rem 0; }
 .section-head { text-align: center; max-width: 780px; margin: 0 auto 2rem; }
-.section-head .lead { color: #566; }
+.section-head .lead { color: var(--muted); }
 
 .rooms-grid {
   display: grid;
@@ -80,21 +80,23 @@ $rooms = [
   grid-column: span 12;
   display: grid;
   grid-template-columns: 1fr;
-  background: #fff;
+  background: var(--card);
+  border: 1px solid var(--ring);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,.25);
 }
 .room-media img { width: 100%; height: auto; display: block; }
 
 .room-body { padding: 1.25rem 1.25rem 1.5rem; }
-.room-desc { color: #3d3d3d; line-height: 1.6; margin: .5rem 0 1rem; }
+.room-desc { color: var(--muted); line-height: 1.6; margin: .5rem 0 1rem; }
 
 .perks { list-style: none; padding: 0; margin: 0 0 1.25rem; display: flex; flex-wrap: wrap; gap: .6rem; }
-.perks li { background: #f2f5f7; padding: .35rem .6rem; border-radius: 999px; font-size: .9rem; }
+.perks li { background: var(--panel); color: var(--ink); padding: .35rem .6rem; border-radius: 999px; font-size: .9rem; }
 
-.room-actions .btn { display: inline-block; padding: .75rem 1rem; border-radius: 12px; text-decoration: none; }
-.btn.primary { background: #0a6; color: #fff; }
+.room-actions .btn { display: inline-block; padding: .75rem 1rem; border-radius: 12px; text-decoration: none; transition: all 0.3s ease; }
+.btn.primary { background: linear-gradient(90deg, var(--brand), var(--brand-2)); border: none; color: #00112a; font-weight: 700; }
+.btn.primary:hover { background: linear-gradient(90deg, var(--brand-2), var(--brand)); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.2); }
 
 @media (min-width: 960px) {
   .room-card { grid-template-columns: 6fr 6fr; }
